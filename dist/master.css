@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+/* Material style */
+input[type=submit] {
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 2px;
+    font-size: 22px;
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+    background: #2196F3;
+    position: relative;
+    overflow: hidden;
+    outline: 0 !important
+}
+input[type=submit]:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, .5);
+    opacity: 0;
+    border-radius: 100%;
+    -webkit-transform: scale(1, 1) translate(-50%);
+            transform: scale(1, 1) translate(-50%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+}
+input[type=submit]:focus:not(:active)::after {
+    -webkit-animation: ripple 1s ease-out;
+            animation: ripple 1s ease-out;
+}
+@-webkit-keyframes ripple {
+    0% {
+        -webkit-transform: scale(0, 0);
+                transform: scale(0, 0);
+        opacity: 1;
+    }
+    20% {
+        -webkit-transform: scale(25, 25);
+                transform: scale(25, 25);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(40, 40);
+                transform: scale(40, 40);
+    }
+}
+@keyframes ripple {
+    0% {
+        -webkit-transform: scale(0, 0);
+                transform: scale(0, 0);
+        opacity: 1;
+    }
+    20% {
+        -webkit-transform: scale(25, 25);
+                transform: scale(25, 25);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(40, 40);
+                transform: scale(40, 40);
+    }
+}
+#loginInput {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#loginInput #user, #loginInput #password {
+        width: 200px;
+        height: 50px;
+        margin: 10px;
+      
+    }
+#loginInput #user input, #loginInput #password input {
+            border-radius: 2px;
+            font-size: 22px;
+            font-style: bold;
+            height: 35px;
+            width: 200px;
+            border: none;
+            border-bottom: 5px solid #2196F3;
+            background: none;
+            color: #2196F3;
+            text-transform: capitalize;
+            padding-left: 5px;
+        }
+#loginInput #user label, #loginInput #password label {
+            position: relative;
+            color: #2196F3;
+            background: none;
+            /*  top:-2em; */
+            /*  left:.5em; */
+        }
+#loginInput #user input:not(.browser-default), #loginInput #password input:not(.browser-default){
+            -webkit-box-shadow: none;
+                    box-shadow: none;            
+        }
+#loginInput #user input:invalid, #loginInput #password input:invalid {
+            -webkit-box-shadow: none;
+                    box-shadow: none;
+        }
+#loginInput #user input:invalid+label, #loginInput #password input:invalid+label {
+            color: #000;
+        }
+#loginInput #user input:focus+label, #loginInput #user input:valid+label, #loginInput #password input:focus+label, #loginInput #password input:valid+label {
+            color: #B0B0B0;
+            /*   top:-4em; */
+            font-size: 12px;
+        }

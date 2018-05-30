@@ -1,0 +1,45 @@
+{
+  "name": "4pir2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+   
+  },
+  "devDependencies": {
+    "eslint": "^4.4.1",
+    "ajv": "^5.4.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-connect-php": "^1.0.1",
+    "browser-sync": "^2.18.13",
+    "gulp-htmlmin": "^3.0.0",
+    "precss": "^2.0.0",
+    "postcss-import": "^11.0.0",
+    "postcss-url": "^7.2.1",
+    "cssnano": "^3.10.0",
+    "postcss-grid-kiss": "^1.4.1",
+    "autoprefixer": "^7.1.6",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-easing-gradients": "^1.2.3",
+    "postcss-font-magician": "^2.1.0",
+    "postcss-reporter": "^5.0.0",
+    "postcss-scss": "^1.0.2",
+    "gulp-babel": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "gulp-concat-js": "^0.1.0",
+    "gulp-beautify": "^2.0.1",
+    "gulp-phpcbf": "^0.1.2"
+  }
+}

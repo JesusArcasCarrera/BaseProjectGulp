@@ -1,0 +1,5 @@
+#/bin/zsh
+
+sudo cp ./projectBase /bin/
+sudo chmod +x /bin/projectBase
+sudo chown srwur:srwur /bin/projectBase

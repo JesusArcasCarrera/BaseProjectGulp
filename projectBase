@@ -1,0 +1,10 @@
+#!/bin/zsh
+
+#Descomprimir archivos base proyecto con gulp
+#sudo cp ./projectBase /bin/
+#sudo chmod +x /bin/projectBase
+#sudo chown srwur:srwur /bin/projectBase
+
+tar -xvf ~/Escritorio/code/SOURCE/baseProjectGulp/baseProjectGulp.tar
+npm init
+npm install
